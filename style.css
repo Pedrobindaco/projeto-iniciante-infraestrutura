@@ -1,13 +1,46 @@
 /* Estilos do projeto */
 body{
     background-color: cornsilk;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    background-color: antiquewhite;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: "IBMPlex", Arial, sans-serif;
+    flex: 1;
+}
+
+main h1{
+    color: darkred;
+    text-align:center;
+    font-family: "Long Shot", Arial, sans-serif;
+}
+
+main h2{
+    color: darkred;
+    font-family: "Long Shot", Arial, sans-serif;
+    font-size: 2.0rem;
+}
+
+main a{
+    color: darkred;
+}
+
+main a:hover{
+    color: black;
 }
 
 header{
     text-align: center;
     font-family: "Long Shot", Arial, sans-serif;
-    font-size: 2.5rem;
-    color: darkred;
+    font-size: 3rem;
+    color: red;
+    background-color: black;
 }
 
 h1{
@@ -17,9 +50,11 @@ h1{
 
 footer{
     font-family: "Long Shot", Arial, sans-serif;
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     display: flex;
     justify-content: center;
+    background-color: black;
+    color: red;
 }
 
 .botao-navegacao{
@@ -29,7 +64,7 @@ footer{
     background: none;
     border: none;
     cursor: pointer;
-    color: black;
+    color: red;
 }
 
 .seta {
@@ -52,6 +87,8 @@ footer{
     justify-content: center;
     background-color: black;
     padding: 1rem;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 .navegacao.aberto{
@@ -70,7 +107,6 @@ footer{
 }
 
 @media (max-width: 600px){
-    h1 {font-size: 2.2rem;}
     .navegacao a{ font-size: 1.8rem;}
     .navegacao.aberto{
         flex-direction: column;
@@ -81,5 +117,11 @@ footer{
 @font-face {
     font-family: "Long Shot";
     src: url("fonts/Long_Shot.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "IMBPlex";
+    src: url("fonts/IBMPlexSerif-Regular.ttf") format("truetype");
     font-display: swap;
 }
