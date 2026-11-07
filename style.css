@@ -8,11 +8,14 @@ body{
 
 main{
     background-color: antiquewhite;
-    max-width: 800px;
     margin: 0 auto;
     padding: 1rem;
     font-family: "IBMPlex", Arial, sans-serif;
     flex: 1;
+}
+
+main p{
+    max-width: 100ch;
 }
 
 main h1{
@@ -55,6 +58,27 @@ footer{
     justify-content: center;
     background-color: black;
     color: red;
+}
+
+.elenco {
+    background-color: white;
+}
+
+.lista-jogadores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.jogador {
+  width: 200px;
+  text-align: center;
+}
+
+.jogador img {
+  width: 100%;
+  height: auto;
 }
 
 .botao-navegacao{
