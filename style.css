@@ -1,25 +1,81 @@
 /* Estilos do projeto */
+body{
+    background-color: cornsilk;
+}
+
 header{
     text-align: center;
     font-family: "Long Shot", Arial, sans-serif;
-    font-size: 2.7rem;
+    font-size: 2.5rem;
+    color: darkred;
+}
+
+h1{
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+footer{
+    font-family: "Long Shot", Arial, sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.botao-navegacao{
+    display: block;
+    margin: 0 auto;
+    padding: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+.seta {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-right: 3px solid currentColor;
+  border-bottom: 3px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.botao-navegacao.aberto .seta {
+  transform: rotate(225deg);
 }
 
 .navegacao{
-    display: flex;
+    display: none;
     gap: 16px;
     justify-content: center;
+    background-color: black;
+    padding: 1rem;
 }
+
+.navegacao.aberto{
+    display: flex;
+}
+
 .navegacao a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: "Long Shot", Arial, sans-serif;
     font-size: 2.5rem;   
+}
 
+.navegacao a:hover{
+    color: darkred;
 }
 
 @media (max-width: 600px){
-    h1 {font-size: 1.8rem;}
+    h1 {font-size: 2.2rem;}
+    .navegacao a{ font-size: 1.8rem;}
+    .navegacao.aberto{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @font-face {
