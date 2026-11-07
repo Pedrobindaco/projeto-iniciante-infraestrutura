@@ -1,1 +1,29 @@
 /* Estilos do projeto */
+header{
+    text-align: center;
+    font-family: "Long Shot", Arial, sans-serif;
+    font-size: 2.7rem;
+}
+
+.navegacao{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+.navegacao a{
+    text-decoration: none;
+    color: black;
+    font-family: "Long Shot", Arial, sans-serif;
+    font-size: 2.5rem;   
+
+}
+
+@media (max-width: 600px){
+    h1 {font-size: 1.8rem;}
+}
+
+@font-face {
+    font-family: "Long Shot";
+    src: url("fonts/Long_Shot.ttf") format("truetype");
+    font-display: swap;
+}
