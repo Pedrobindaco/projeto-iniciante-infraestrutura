@@ -122,3 +122,17 @@ if (form) {
     leitor.readAsDataURL(arquivo);
   });
 }
+
+const titulos = document.querySelectorAll(".titulo-acordeao");
+
+titulos.forEach(function (titulo) {
+  titulo.addEventListener("click", function () {
+    const item = titulo.parentElement;
+    item.classList.toggle("aberto");
+
+    titulo.setAttribute(
+      "aria-expanded",
+      item.classList.contains("aberto")
+    );
+  });
+});
