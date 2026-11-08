@@ -4,6 +4,7 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 main{
@@ -62,6 +63,19 @@ footer{
 
 .elenco {
     background-color: white;
+}
+
+.btn-remover {
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background-color: darkred;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-remover:hover {
+  background-color: black;
 }
 
 .lista-jogadores {
