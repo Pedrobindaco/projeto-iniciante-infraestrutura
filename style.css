@@ -67,6 +67,33 @@ footer{
   
 }
 
+.titulo-acordeao {
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+  font-family: "Long Shot", Arial, sans-serif;
+  font-size: 1.5rem;
+  background-color: black;
+  color: red;
+  border: none;
+  border-bottom: 2px solid darkred;
+  cursor: pointer;
+}
+
+.titulo-acordeao:hover {
+  background-color: darkred;
+  color: white;
+}
+
+.conteudo-acordeao {
+  display: none;
+  padding: 1rem;
+  background-color: white;
+}
+
+.item-acordeao.aberto .conteudo-acordeao {
+  display: block;
+}
 
 .localizacao {
   display: block;
