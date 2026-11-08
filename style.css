@@ -60,10 +60,52 @@ footer{
     background-color: black;
     color: red;
 }
+.pagina-estadio {
+  width: 100%;  
+  max-width: none;
+  padding: 0;
+  
+}
+
+
+.localizacao {
+  display: block;
+  width: 100%;
+  height: 400px;
+  margin-top: 1.5rem;
+  border: 0;
+}
+
+.estadio-banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.estadio-foto {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.estadio-conteudo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 700px;
+  padding: 2rem;
+  background-color: antiquewhite;
+}
 
 .elenco {
     background-color: white;
 }
+
+
 
 .btn-remover {
   margin-top: 0.5rem;
@@ -150,6 +192,12 @@ footer{
         flex-direction: column;
         align-items: center;
     }
+    .estadio-banner {
+        padding: 1rem;
+    }
+    .localizacao{
+        height: 250px;
+    }
 }
 
 @font-face {
@@ -159,7 +207,7 @@ footer{
 }
 
 @font-face {
-    font-family: "IMBPlex";
+    font-family: "IBMPlex";
     src: url("fonts/IBMPlexSerif-Regular.ttf") format("truetype");
     font-display: swap;
 }
