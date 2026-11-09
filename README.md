@@ -1,9 +1,12 @@
-# Arquivo do Vasco
+# Catálogo do Vasco
 
 Um pequeno site com informações sobre o Gigante da Colina, contando o contexto histórico, parte do elenco atual, formulário para adição de novos jogadores, informações sobre o estádio e sobre os troféus.
 
 ## Como rodar
 Abra o arquivo `index.html` no navegador (ou use a extensão Live Server do VS Code).
+
+## LINK DO SITE:
+https://pedrobindaco.github.io/projeto-iniciante-infraestrutura/
 
 ## Elementos dinâmicos
 1. Botão para abrir o menu de navegação
